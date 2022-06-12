@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  regex:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: regex_example
+    tty: true
+    working_dir: /var/www
+    volumes:
+      - .:/var/www
