@@ -8,4 +8,4 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 RUN composer install --no-interaction
 
-CMD ["php", "src/main.php"]
+CMD ["./vendor/bin/phpunit"]
